@@ -1,0 +1,28 @@
+{
+  "name": "clase",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "testCrear": "babel-node src/app crear --descripcion \"Pasear al perro\"",
+    "testActualizar": "babel-node src/app actualizar --descripcion \"Pasear al perro\" ",
+    "testListar": "babel-node src/app listar",
+    "testEliminar": "babel-node src/app eliminar --descripcion \"Pasear al perro\"",
+    "testError": "babel-node src/app",
+    "build": "babel src -d dist",
+    "watch": "babel -w src -d dist"
+  },
+  "author": "EliezerPP",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "colors": "^1.4.0",
+    "yargs": "^7.1.0"
+  }
+}
